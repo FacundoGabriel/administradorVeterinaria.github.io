@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(31 41 55);
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.tittle_administrador{
+    align-items: center;
+    text-align: center;
+    margin: 50px 0;
+    font-size: 26px;
+}
+
+.alerta{
+    width: 70%;
+    margin: auto;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    color: #fff;
+
+}
+
+
+.contenido{
+    width: 90%;
+    display: flex;
+    padding: 50px 0;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.contenido_form{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 600px;
+    justify-content: space-between;
+}
+
+.nombre_paciente, .propietario_paciente, .telefono_paciente, .fecha, .hora, .sintomas_paciente{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input{
+    font-size: 14px;
+    width: 300px;
+    border-radius: 5px;
+    padding: 6px ;
+}
+
+.btn_crear input{
+    border: none;
+    background: #28B62C;
+    color: #fff;
+    padding: 15px 0; 
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.contenido_pacientes{
+    width: 30%;
+}
+
+
+.error{
+    background: #ff4136;
+    text-align: center;
+    padding: 10px;
+}
+
+.correcto{
+    background: #28B62C;
+    text-align: center;
+    padding: 10px;
+}
+
+.cita{
+    margin-top: 60px;
+    gap: 12px;
+}
+
+.mascota{
+    margin: 20px 0;
+    font-size: 28px;
+}
+
+
+span{
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 6px;
+
+
+}
+
+p{
+    margin-top: 15px;
+}
+
+.btn_eliminar{
+    background-color: #ff4136;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 0;
+    width: 120px;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    margin-top: 20px;
+}
+
+
+.btn_editar{
+    background-color: #75CAEB;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 0;
+    width: 120px;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    margin-left: 20px;
+}
+
+
+/*------------- responsive ---------------*/
+
+@media (max-width: 1100px){
+    .contenido{
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        width: 100%;
+    }
+    
+    .contenido_pacientes{
+        margin: auto;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 250px;
+    }
+
+    .contenido_form{
+        margin: auto;
+        max-width: 100%;
+        width: 100%;
+        /* border: 1px solid red; */
+        align-items: center;
+    }
+
+    .formulario{
+        width: 100%;
+        align-items: center;
+    }
+
+
+    .nombre_paciente, .propietario_paciente, .telefono_paciente, .fecha, .hora, .sintomas_paciente{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn_crear{
+        width: 50%;
+    }
+
+}

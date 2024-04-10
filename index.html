@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <title>Administrador de Pacientes</title>
+</head>
+<body>
+    <section class="container"> 
+        <div class="tittle_administrador">
+            <h1>Administrador De Veterinaria</h1>
+        </div>
+
+        <div class="alerta">
+            
+        </div>
+        <div class="contenido">
+
+            <div class="contenido_form">
+                <div class="tittle"> 
+                    <h1>Datos del paciente</h1>
+                </div>
+               
+
+                <form id="formulario" class="formulario"> 
+                    <div class="nombre_paciente">
+                        <label>Nombre Mascota: </label>
+                        <input type="text" name="mascota" id="nombre" class="input" placeholder="Nombre de la mascota">
+                    </div>
+
+                    <div class="propietario_paciente">
+                        <label>Propietario: </label>
+                        <input type="text" name="propietario" id="propietario" class="input" placeholder="Nombre del propietario">
+                    </div>
+
+                    <div class="telefono_paciente">
+                        <label >Teléfono: </label>
+                        <input type="text" name="telefono" id="numero" class="input" placeholder="Número de Teléfono">
+                    </div>
+
+                    <div class="fecha">
+                        <label>Fecha: </label>
+                        <input type="date" name="fecha" id="fecha" class="input">
+                    </div>
+
+                    <div class="hora">
+                        <label>Hora: </label>
+                        <input type="time" name="hora" id="hora" class="input">
+                    </div>
+
+                    <div class="sintomas_paciente">
+                        <label>Sintomas: </label>
+                        <textarea name="sintomas" id="sintomas" cols="30" rows="10" class="input"></textarea >
+                    </div>
+
+                    <div class="btn_crear">
+                        <input type="submit" name="crear" id="btn_crear" value="Crear Cita">
+                    </div>
+                </form>
+            </div>
+
+            <div class="contenido_pacientes">
+                <h1>Administra tus pacientes</h1>
+                <ul class="listas" id="listas"></ul>
+            </div>
+        </div>
+    </section>
+
+    <script src="app/app.js"></script>
+</body>
+</html>
